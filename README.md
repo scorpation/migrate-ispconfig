@@ -11,3 +11,4 @@ sudo firewall-cmd --add-port 53/udp --permanent//BINDNS<br>
 sudo firewall-cmd --add-port 25/tcp --permanent//SMTP<br>
 sudo firewall-cmd --add-port 143/tcp --permanent//IMAP<br>
 sudo firewall-cmd --reload<br>
+cp /etc/postfix<br>
