@@ -11,7 +11,7 @@ sudo firewall-cmd --add-port 53/udp --permanent//BINDNS<br>
 sudo firewall-cmd --add-port 25/tcp --permanent//SMTP<br>
 sudo firewall-cmd --add-port 143/tcp --permanent//IMAP<br>
 sudo firewall-cmd --reload<br>
-cp /etc/postfix<br>
-cp /etc/dovecot-sql.conf<br>
-cp /etc/mailman<br>
-update user set password='OLD_PASSWORD' WHERE user='ispconfig'<br>;
+cp /etc/postfix( sin configuración sql)<br>
+cp /etc/mailman( sin configuración sql)<br>
+cat "nameserve 8.8.8.8" > /etc/resolv.conf<br>
+cat "nameserve 4.4.4.4" > /etc/resolv.conf<br>
