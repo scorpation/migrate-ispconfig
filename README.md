@@ -12,5 +12,6 @@ sudo firewall-cmd --add-port 25/tcp --permanent//SMTP<br>
 sudo firewall-cmd --add-port 143/tcp --permanent//IMAP<br>
 sudo firewall-cmd --reload<br>
 cp /etc/postfix<br>
-cp /etc/dovecot-sql.conf
-cp /etc/mailman
+cp /etc/dovecot-sql.conf<br>
+cp /etc/mailman<br>
+update user set password='OLD_PASSWORD' WHERE user='ispconfig'<br>;
