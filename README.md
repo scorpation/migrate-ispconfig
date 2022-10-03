@@ -15,3 +15,4 @@ cp /etc/postfix( sin configuración sql)<br>
 cp /etc/mailman( sin configuración sql)<br>
 cat "nameserve 8.8.8.8" > /etc/resolv.conf<br>
 cat "nameserve 4.4.4.4" > /etc/resolv.conf<br>
+cat "$config['smtp_port'] = 465;" > /var/www/html/roundcubemail/config/config.inc.php<br>
