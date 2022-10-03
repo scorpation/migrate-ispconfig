@@ -6,3 +6,7 @@ TODO: clients database, properties file,<br>
 sed -i 's/OLD_DNS/NEW_DNS/g' /var/named/pri*<br>
 sed -i 's/OLD_IP/NEW_IP/g' /var/named/pri*<br>
 cp /etc/named.conf.local<br>
+sudo firewall-cmd --add-port 53/tcp --permanent//BINDNS<br>
+sudo firewall-cmd --add-port 53/udp --permanent//BINDNS<br>
+sudo firewall-cmd --add-port 25/tcp --permanent//SMTP<br>
+sudo firewall-cmd --add-port 143/tcp --permanent//IMAP<br>
