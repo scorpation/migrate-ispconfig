@@ -13,3 +13,4 @@ sudo firewall-cmd --add-port 143/tcp --permanent//IMAP<br>
 sudo firewall-cmd --reload<br>
 cp /etc/postfix<br>
 cp /etc/dovecot-sql.conf
+cp /etc/mailman
